@@ -50,7 +50,7 @@ class HomePageState extends State<HomePage> {
     return Align(
       alignment: Alignment.topLeft,
       child: IconButton(
-          icon: Icon(FontAwesomeIcons.searchMinus, color: Color(0xff6200ee)),
+          icon: Icon(FontAwesomeIcons.searchMinus, color: Color(0xFFEE8700)),
           onPressed: () {
             zoomVal--;
             _minus(zoomVal);
@@ -62,7 +62,7 @@ class HomePageState extends State<HomePage> {
     return Align(
       alignment: Alignment.topRight,
       child: IconButton(
-          icon: Icon(FontAwesomeIcons.searchPlus, color: Color(0xff6200ee)),
+          icon: Icon(FontAwesomeIcons.searchPlus, color: Color(0xFFEE8700)),
           onPressed: () {
             zoomVal++;
             _plus(zoomVal);
@@ -173,7 +173,7 @@ class HomePageState extends State<HomePage> {
               child: Text(
             restaurantName,
             style: TextStyle(
-                color: Color(0xff6200ee),
+                color: Color(0xFFEE8700),
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold),
           )),
@@ -239,7 +239,7 @@ class HomePageState extends State<HomePage> {
         SizedBox(height: 5.0),
         Container(
             child: Text(
-          "American \u00B7 \u0024\u0024 \u00B7 1.6 mi",
+          "Pesos \u00B7 \u0024\u0024 \u00B7 1.6 mi",
           style: TextStyle(
             color: Colors.black54,
             fontSize: 18.0,
@@ -248,7 +248,7 @@ class HomePageState extends State<HomePage> {
         SizedBox(height: 5.0),
         Container(
             child: Text(
-          "Closed \u00B7 Opens 17:00 Thu",
+          "Cerrado \u00B7 Opens 17:00 Jue",
           style: TextStyle(
               color: Colors.black54,
               fontSize: 18.0,
@@ -293,8 +293,8 @@ class HomePageState extends State<HomePage> {
 }
 
 Marker gramercyMarker = Marker(
-  markerId: MarkerId('gramercy'),
-  position: LatLng(40.738380, -73.988426),
+  markerId: MarkerId('sanangel'),
+  position: LatLng(19.3492661, -99.2000909),
   infoWindow: InfoWindow(title: 'San Ángel Inn'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
@@ -302,16 +302,16 @@ Marker gramercyMarker = Marker(
 );
 
 Marker bernardinMarker = Marker(
-  markerId: MarkerId('bernardin'),
-  position: LatLng(40.761421, -73.981667),
+  markerId: MarkerId('antiguahacienda'),
+  position: LatLng(19.2887052, -99.1654046),
   infoWindow: InfoWindow(title: 'Antigua Hacienda de Tlalpan'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 Marker blueMarker = Marker(
-  markerId: MarkerId('bluehill'),
-  position: LatLng(40.732128, -73.999619),
+  markerId: MarkerId('arroyo'),
+  position: LatLng(19.2870699, -99.1751229),
   infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
