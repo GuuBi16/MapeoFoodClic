@@ -26,7 +26,7 @@ class HomePageState extends State<HomePage> {
             onPressed: () {
               //
             }),
-        title: Text("New York"),
+        title: Text("Restaurantes"),
         actions: <Widget>[
           IconButton(
               icon: Icon(FontAwesomeIcons.search),
@@ -96,27 +96,27 @@ class HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
                   "https://lh5.googleusercontent.com/p/AF1QipO3VPL9m-b355xWeg4MXmOQTauFAEkavSluTtJU=w225-h160-k-no",
-                  40.738380,
-                  -73.988426,
-                  "Gramercy Tavern"),
+                  19.3492661,
+                  -99.2000909,
+                  "San Ángel Inn"),
             ),
             SizedBox(width: 10.0),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
                   "https://lh5.googleusercontent.com/p/AF1QipMKRN-1zTYMUVPrH-CcKzfTo6Nai7wdL7D8PMkt=w340-h160-k-no",
-                  40.761421,
-                  -73.981667,
-                  "Le Bernardin"),
+                  19.2887052,
+                  -99.1654046,
+                  "Antigua Hacienda de Tlalpan"),
             ),
             SizedBox(width: 10.0),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
                   "https://images.unsplash.com/photo-1504940892017-d23b9053d5d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-                  40.732128,
-                  -73.999619,
-                  "Blue Hill"),
+                  19.2870699,
+                  -99.1751229,
+                  "Restaurante Arroyo"),
             ),
           ],
         ),
@@ -265,7 +265,7 @@ class HomePageState extends State<HomePage> {
       child: GoogleMap(
         mapType: MapType.normal,
         initialCameraPosition:
-            CameraPosition(target: LatLng(40.712776, -74.005974), zoom: 12),
+            CameraPosition(target: LatLng(19.2903597, -99.1821242), zoom: 12),
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
         },
@@ -295,7 +295,7 @@ class HomePageState extends State<HomePage> {
 Marker gramercyMarker = Marker(
   markerId: MarkerId('gramercy'),
   position: LatLng(40.738380, -73.988426),
-  infoWindow: InfoWindow(title: 'Gramercy Tavern'),
+  infoWindow: InfoWindow(title: 'San Ángel Inn'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
@@ -304,7 +304,7 @@ Marker gramercyMarker = Marker(
 Marker bernardinMarker = Marker(
   markerId: MarkerId('bernardin'),
   position: LatLng(40.761421, -73.981667),
-  infoWindow: InfoWindow(title: 'Le Bernardin'),
+  infoWindow: InfoWindow(title: 'Antigua Hacienda de Tlalpan'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
@@ -312,7 +312,7 @@ Marker bernardinMarker = Marker(
 Marker blueMarker = Marker(
   markerId: MarkerId('bluehill'),
   position: LatLng(40.732128, -73.999619),
-  infoWindow: InfoWindow(title: 'Blue Hill'),
+  infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
@@ -322,24 +322,24 @@ Marker blueMarker = Marker(
 
 Marker newyork1Marker = Marker(
   markerId: MarkerId('newyork1'),
-  position: LatLng(40.742451, -74.005959),
-  infoWindow: InfoWindow(title: 'Los Tacos'),
+  position: LatLng(19.3492611, -99.2000909),
+  infoWindow: InfoWindow(title: 'San Ángel Inn'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 Marker newyork2Marker = Marker(
   markerId: MarkerId('newyork2'),
-  position: LatLng(40.729640, -73.983510),
-  infoWindow: InfoWindow(title: 'Tree Bistro'),
+  position: LatLng(19.2887052, -99.1654046),
+  infoWindow: InfoWindow(title: 'Antigua Hacienda de Tlalpan'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 Marker newyork3Marker = Marker(
   markerId: MarkerId('newyork3'),
-  position: LatLng(40.719109, -74.000183),
-  infoWindow: InfoWindow(title: 'Le Coucou'),
+  position: LatLng(19.2875079, -99.1776744),
+  infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
