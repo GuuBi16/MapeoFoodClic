@@ -26,7 +26,7 @@ class HomePageState extends State<HomePage> {
             onPressed: () {
               //
             }),
-        title: Text("Restaurantes"),
+        title: Text("Restaurantes Mexicanos"),
         actions: <Widget>[
           IconButton(
               icon: Icon(FontAwesomeIcons.search),
@@ -72,14 +72,14 @@ class HomePageState extends State<HomePage> {
 
   Future<void> _minus(double zoomVal) async {
     final GoogleMapController controller = await _controller.future;
-    controller.animateCamera(CameraUpdate.newCameraPosition(
-        CameraPosition(target: LatLng(40.712776, -74.005974), zoom: zoomVal)));
+    controller.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
+        target: LatLng(19.2903597, -99.1821242), zoom: zoomVal)));
   }
 
   Future<void> _plus(double zoomVal) async {
     final GoogleMapController controller = await _controller.future;
-    controller.animateCamera(CameraUpdate.newCameraPosition(
-        CameraPosition(target: LatLng(40.712776, -74.005974), zoom: zoomVal)));
+    controller.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
+        target: LatLng(19.2903597, -99.1821242), zoom: zoomVal)));
   }
 
   Widget _buildContainer() {
@@ -114,8 +114,8 @@ class HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
                   "https://images.unsplash.com/photo-1504940892017-d23b9053d5d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-                  19.2870699,
-                  -99.1751229,
+                  19.2875079,
+                  -99.1760329,
                   "Restaurante Arroyo"),
             ),
           ],
@@ -228,7 +228,7 @@ class HomePageState extends State<HomePage> {
             ),
             Container(
                 child: Text(
-              "(946)",
+              "(521)",
               style: TextStyle(
                 color: Colors.black54,
                 fontSize: 18.0,
@@ -248,7 +248,7 @@ class HomePageState extends State<HomePage> {
         SizedBox(height: 5.0),
         Container(
             child: Text(
-          "Cerrado \u00B7 Opens 17:00 Jue",
+          "Cerrado \u00B7 Abierto 17:00 Jue",
           style: TextStyle(
               color: Colors.black54,
               fontSize: 18.0,
@@ -311,7 +311,7 @@ Marker bernardinMarker = Marker(
 );
 Marker blueMarker = Marker(
   markerId: MarkerId('arroyo'),
-  position: LatLng(19.2870699, -99.1751229),
+  position: LatLng(19.2875079, -99.1760329),
   infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
@@ -338,7 +338,7 @@ Marker newyork2Marker = Marker(
 );
 Marker newyork3Marker = Marker(
   markerId: MarkerId('newyork3'),
-  position: LatLng(19.2875079, -99.1776744),
+  position: LatLng(19.2875079, -99.1760329),
   infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
