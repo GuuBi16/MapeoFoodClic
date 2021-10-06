@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\bby_1\\OneDrive\\Documentos\\GitHub\\MapeoFoodClic\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "D:\\Proyectos\\MapeoFoodClic\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\bby_1\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\4430b67763a542b04e7d381508cfb446\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\JACP\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3371fe5e06b935b706fd5f95c8ae1037\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
