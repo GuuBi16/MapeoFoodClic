@@ -439,6 +439,64 @@ class HomePageState extends State<HomePage> {
   }
 
   Widget _buildGoogleMap(BuildContext context) {
+    Marker newyork1Marker = Marker(
+        markerId: MarkerId('newyork1'),
+        position: LatLng(19.3492611, -99.2000909),
+        infoWindow: InfoWindow(title: 'San Ángel Inn'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueViolet,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: new Center(
+                    child: Text("data"),
+                  ),
+                );
+              });
+        });
+    Marker newyork2Marker = Marker(
+        markerId: MarkerId('newyork2'),
+        position: LatLng(19.2887052, -99.1654046),
+        infoWindow: InfoWindow(title: 'Antigua Hacienda de Tlalpan'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueViolet,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: new Center(
+                    child: Text("data"),
+                  ),
+                );
+              });
+        });
+    Marker newyork3Marker = Marker(
+        markerId: MarkerId('newyork3'),
+        position: LatLng(19.2875079, -99.1760329),
+        infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueViolet,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: new Center(
+                    child: Text("data"),
+                  ),
+                );
+              });
+        });
+
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
@@ -472,10 +530,7 @@ class HomePageState extends State<HomePage> {
           newyork20Marker,
           newyork21Marker,
           newyork22Marker,
-          newyork23Marker,
-          gramercyMarker,
-          bernardinMarker,
-          blueMarker
+          newyork23Marker
         },
       ),
     );
@@ -492,58 +547,6 @@ class HomePageState extends State<HomePage> {
   }
 }
 
-Marker gramercyMarker = Marker(
-  markerId: MarkerId('sanangel'),
-  position: LatLng(19.3492661, -99.2000909),
-  infoWindow: InfoWindow(title: 'San Ángel Inn'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-
-Marker bernardinMarker = Marker(
-  markerId: MarkerId('antiguahacienda'),
-  position: LatLng(19.2887052, -99.1654046),
-  infoWindow: InfoWindow(title: 'Antigua Hacienda de Tlalpan'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker blueMarker = Marker(
-  markerId: MarkerId('arroyo'),
-  position: LatLng(19.2875079, -99.1760329),
-  infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-
-//New York Marker
-
-Marker newyork1Marker = Marker(
-  markerId: MarkerId('newyork1'),
-  position: LatLng(19.3492611, -99.2000909),
-  infoWindow: InfoWindow(title: 'San Ángel Inn'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork2Marker = Marker(
-  markerId: MarkerId('newyork2'),
-  position: LatLng(19.2887052, -99.1654046),
-  infoWindow: InfoWindow(title: 'Antigua Hacienda de Tlalpan'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork3Marker = Marker(
-  markerId: MarkerId('newyork3'),
-  position: LatLng(19.2875079, -99.1760329),
-  infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
 Marker newyork4Marker = Marker(
   markerId: MarkerId('newyork4'),
   position: LatLng(19.4274206, -99.1936420),

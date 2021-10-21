@@ -1,4 +1,4 @@
-#Tue Oct 05 20:00:58 CDT 2021
+#Wed Oct 20 21:00:32 CDT 2021
 base.0=D\:\\Proyectos\\MapeoFoodClic\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
