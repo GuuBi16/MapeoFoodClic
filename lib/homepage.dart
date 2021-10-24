@@ -285,8 +285,8 @@ class HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
                   "https://images.unsplash.com/photo-1504940892017-d23b9053d5d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-                  19.4311038,
-                  -99.1918080,
+                  19.4308458,
+                  -99.1939002,
                   "Quintonil"),
             ),
             SizedBox(width: 10.0),
@@ -294,8 +294,8 @@ class HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
                   "https://images.unsplash.com/photo-1504940892017-d23b9053d5d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-                  19.4051921,
-                  -99.1965696,
+                  19.4049138,
+                  -99.1987476,
                   "Casa Merlos"),
             ),
           ],
@@ -452,8 +452,49 @@ class HomePageState extends State<HomePage> {
               builder: (builder) {
                 return Container(
                   color: Colors.white,
-                  child: new Center(
-                    child: Text("data"),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "San Ángel Inn",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "Restaurante mexicano fino en un antiguo monasterio con mesas al aire libre alrededor de una fuente.",
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "https://www.sanangelinn.com",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5556161402",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 );
               });
@@ -692,16 +733,16 @@ Marker newyork21Marker = Marker(
   ),
 );
 Marker newyork22Marker = Marker(
-  markerId: MarkerId('newyork21'),
-  position: LatLng(19.4311038, -99.1918080),
+  markerId: MarkerId('newyork22'),
+  position: LatLng(19.4308458, -99.1939002),
   infoWindow: InfoWindow(title: 'Quintonil'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 Marker newyork23Marker = Marker(
-  markerId: MarkerId('newyork21'),
-  position: LatLng(19.4051921, -99.1965696),
+  markerId: MarkerId('newyork23'),
+  position: LatLng(19.4049138, -99.1987476),
   infoWindow: InfoWindow(title: 'Casa Merlos'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
