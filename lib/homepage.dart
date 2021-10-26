@@ -10,6 +10,7 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   Completer<GoogleMapController> _controller = Completer();
+  final LatLng _center = const LatLng(19.7192639, -99.2350336);
 
   @override
   void initState() {
@@ -444,7 +445,7 @@ class HomePageState extends State<HomePage> {
         position: LatLng(19.3492611, -99.2000909),
         infoWindow: InfoWindow(title: 'San Ángel Inn'),
         icon: BitmapDescriptor.defaultMarkerWithHue(
-          BitmapDescriptor.hueViolet,
+          BitmapDescriptor.hueOrange,
         ),
         onTap: () {
           showModalBottomSheet(
@@ -467,6 +468,32 @@ class HomePageState extends State<HomePage> {
                         "Restaurante mexicano fino en un antiguo monasterio con mesas al aire libre alrededor de una fuente.",
                         style:
                             TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Diego Rivera 50, San Ángel Inn, Álvaro Obregón, 01060 Ciudad de México, CDMX",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto de Lunes a Domingo de 08:00 - 22:00",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
                       ),
                       Padding(
                         padding: EdgeInsets.all(1.0),
@@ -504,7 +531,7 @@ class HomePageState extends State<HomePage> {
         position: LatLng(19.2887052, -99.1654046),
         infoWindow: InfoWindow(title: 'Antigua Hacienda de Tlalpan'),
         icon: BitmapDescriptor.defaultMarkerWithHue(
-          BitmapDescriptor.hueViolet,
+          BitmapDescriptor.hueOrange,
         ),
         onTap: () {
           showModalBottomSheet(
@@ -512,8 +539,80 @@ class HomePageState extends State<HomePage> {
               builder: (builder) {
                 return Container(
                   color: Colors.white,
-                  child: new Center(
-                    child: Text("data"),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "Antigua Hacienda de Tlalpan",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "Mariscos y carnes servidos en un restaurante de estilo colonial con numerosos comedores, un campo de césped y pavos reales.",
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Calz. de Tlalpan 4619, Tlalpan Centro I, Tlalpan, 14000 Ciudad de México, CDMX",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto "
+                            "Lunes a Viernes de 08:00 - 23:00 "
+                            "Sabado "
+                            "09:00 - 23:00 y "
+                            "Domingo "
+                            "09:00 - 19:00",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "https://www.aht.mx",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5556557888",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 );
               });
@@ -523,7 +622,7 @@ class HomePageState extends State<HomePage> {
         position: LatLng(19.2875079, -99.1760329),
         infoWindow: InfoWindow(title: 'Restaurante Arroyo'),
         icon: BitmapDescriptor.defaultMarkerWithHue(
-          BitmapDescriptor.hueViolet,
+          BitmapDescriptor.hueOrange,
         ),
         onTap: () {
           showModalBottomSheet(
@@ -531,20 +630,736 @@ class HomePageState extends State<HomePage> {
               builder: (builder) {
                 return Container(
                   color: Colors.white,
-                  child: new Center(
-                    child: Text("data"),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "Restaurante Arroyo",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "Restaurante amplio y animado de cocina mexicana, con platos tradicionales y actuaciones en directo de mariachis.",
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Av. Insurgentes Sur 4003, Sta Úrsula Xitla, Tlalpan, 14000 Ciudad de México, CDMX",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto "
+                            "Lunes a Viernes de 12:00 - 20:00 "
+                            "Sabado y Domingo "
+                            "08:00 - 20:00",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "http://arroyorestaurante.mx/",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5555734344",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              });
+        });
+    Marker newyork4Marker = Marker(
+        markerId: MarkerId('newyork4'),
+        position: LatLng(19.4272233, -99.1957986),
+        infoWindow: InfoWindow(title: 'Chapulín'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueOrange,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "Restaurante Chapulín",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "Comedor en hotel sofisticado y terraza que ofrece platos fusión mexicanos, y comida y postres para compartir.",
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Campos Elíseos 218, Polanco, Polanco IV Secc, Miguel Hidalgo, 11560 Ciudad de México, CDMX, Piso 0 - Intercontinental Presidente México City, an IHG Hotel",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto "
+                            "Lunes a Sabado de 08:00 - 01:00 "
+                            "Domingo "
+                            "08:00 - 22:00",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "http://www.chapulin.rest/",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5553277789",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 );
               });
         });
 
+    Marker newyork5Marker = Marker(
+        markerId: MarkerId('newyork5'),
+        position: LatLng(19.4357276, -99.1398458),
+        infoWindow: InfoWindow(title: 'Café de Tacuba'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueOrange,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "Restaurante Café de Tacuba",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "Restaurante centenario, conocido por su receta de mole picante, su elaborada decoración y las actuaciones en directo de mariachis.",
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Tacuba 28, Col. Centro Historico, Deleg, Cuauhtémoc, 06010 Ciudad de México, CDMX",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto "
+                            "Lunes a Domingo de 08:00 - 22:30",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "http://www.cafedetacuba.info/",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5555212048",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              });
+        });
+
+    Marker newyork6Marker = Marker(
+        markerId: MarkerId('newyork6'),
+        position: LatLng(19.3488345, -99.1636558),
+        infoWindow: InfoWindow(title: 'Los Danzantes'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueOrange,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "Restaurante Los Danzantes",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "Elegante restaurant en edificio colonial con mesas al aire libre, experto en cocina mexicana moderna y mezcal.",
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Parque Centenario 12, Coyoacán TNT, Coyoacán, 04000 Ciudad de México, CDMX",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto "
+                            "Lunes a Jueves de 12:30 - 23:00 "
+                            "Viernes 12:30 - 00:00 "
+                            "Sabado 10:00 - 00:00 "
+                            "Domingo 10:00 - 23:00",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "http://losdanzantes.com/los-danzantes-coyoacan/",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5565852477",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              });
+        });
+
+    Marker newyork7Marker = Marker(
+        markerId: MarkerId('newyork7'),
+        position: LatLng(19.2948654, -99.1283186),
+        infoWindow: InfoWindow(title: 'Restaurante Porfirio´s Coapa'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueOrange,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "Restaurante Porfirio´s Coapa",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      //Text(
+                      //"Elegante restaurant en edificio colonial con mesas al aire libre, experto en cocina mexicana moderna y mezcal.",
+                      //style:
+                      //TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      //),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Calzada Acoxpa 610 Gran Terraza Coapa, locales 101, 102 y 103, Coapa, Tlalpan, 14390 CDMX",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto "
+                            "Domingo y Lunes de 13:00 - 22:00 "
+                            "Martes a Sabado de 13:00 - 00:00",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "https://porfirios.com.mx/",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5517173418",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              });
+        });
+
+    Marker newyork8Marker = Marker(
+        markerId: MarkerId('newyork8'),
+        position: LatLng(19.4315513, -99.1900471),
+        infoWindow: InfoWindow(title: 'Porfirio´s Masaryk'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueOrange,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "Restaurante Porfirio's Masaryk",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      //Text(
+                      //"Cocina mexicana de vanguardia y una amplia selección de tequila y mezcal en un restaurante elegante y chic.",
+                      //style:
+                      //TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      //),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Av. Presidente Masaryk 214, Polanco, Miguel Hidalgo, 11580 Ciudad de México, CDMX",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto "
+                            "Lunes a Domingo de 13:00 - 01:00",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "http://porfirios.com.mx/",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5552801494",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              });
+        });
+
+    Marker newyork9Marker = Marker(
+        markerId: MarkerId('newyork9'),
+        position: LatLng(19.4551577, -99.2216265),
+        infoWindow: InfoWindow(title: 'Porfirio´s Toreo'),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueOrange,
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (builder) {
+                return Container(
+                  color: Colors.white,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        "Restaurante Porfirio's Toreo",
+                        style:
+                            TextStyle(fontSize: 20, color: Colors.orange[300]),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      //Text(
+                      //"Cocina mexicana de vanguardia y una amplia selección de tequila y mezcal en un restaurante elegante y chic.",
+                      //style:
+                      //TextStyle(fontSize: 16, color: Colors.orange[300]),
+                      //),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.mapMarkerAlt,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Blvd. Manuel Avila Camacho 5 Toreo Parque Central, Planta Baja, 53390 Naucalpan de Juárez, Méx.",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.clock,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "Abierto "
+                            "Domingo y Lunes de 13:00 - 22:00 "
+                            "Martes a Sabado de 13:00 - 00:00 ",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.link,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "http://porfirios.com.mx/",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: ListTile(
+                          leading: Icon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.orange[300],
+                          ),
+                          title: Text(
+                            "5551627212",
+                            style: TextStyle(color: Colors.orange[300]),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              });
+        });
+    Marker newyork10Marker = Marker(
+      markerId: MarkerId('newyork10'),
+      position: LatLng(19.4331026, -99.1362955),
+      infoWindow: InfoWindow(title: 'Azul Historico'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork11Marker = Marker(
+      markerId: MarkerId('newyork11'),
+      position: LatLng(19.3138514, -99.1850571),
+      infoWindow: InfoWindow(title: 'Azul y Oro'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork12Marker = Marker(
+      markerId: MarkerId('newyork12'),
+      position: LatLng(19.4130653, -99.1714772),
+      infoWindow: InfoWindow(title: 'Azul Condesa'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork13Marker = Marker(
+      markerId: MarkerId('newyork13'),
+      position: LatLng(19.4350266, -99.1459657),
+      infoWindow: InfoWindow(title: 'El Cardenal Cuahutemoc 1'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork14Marker = Marker(
+      markerId: MarkerId('newyork14'),
+      position: LatLng(19.4339326, -99.1353377),
+      infoWindow: InfoWindow(title: 'El Cardenal Cuahutemoc 2'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork15Marker = Marker(
+      markerId: MarkerId('newyork15'),
+      position: LatLng(19.3951450, -99.1753602),
+      infoWindow: InfoWindow(title: 'El Cardenal Benito Juárez'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork16Marker = Marker(
+      markerId: MarkerId('newyork16'),
+      position: LatLng(19.3473490, -99.1888229),
+      infoWindow: InfoWindow(title: 'El Cardenal Álvaro Obregón'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork17Marker = Marker(
+      markerId: MarkerId('newyork17'),
+      position: LatLng(19.4310083, -99.2099231),
+      infoWindow: InfoWindow(title: 'El Cardenal Miguel Hidalgo'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork18Marker = Marker(
+      markerId: MarkerId('newyork18'),
+      position: LatLng(19.4344523, -99.2091766),
+      infoWindow: InfoWindow(title: 'La Hacienda de los Morales'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork19Marker = Marker(
+      markerId: MarkerId('newyork19'),
+      position: LatLng(19.4330510, -99.1947873),
+      infoWindow: InfoWindow(title: 'Pujol'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork20Marker = Marker(
+      markerId: MarkerId('newyork20'),
+      position: LatLng(19.4363097, -99.1379504),
+      infoWindow: InfoWindow(title: 'Limosneros'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork21Marker = Marker(
+      markerId: MarkerId('newyork21'),
+      position: LatLng(19.4652252, -99.1777254),
+      infoWindow: InfoWindow(title: 'Nicos'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork22Marker = Marker(
+      markerId: MarkerId('newyork22'),
+      position: LatLng(19.4308458, -99.1939002),
+      infoWindow: InfoWindow(title: 'Quintonil'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+    Marker newyork23Marker = Marker(
+      markerId: MarkerId('newyork23'),
+      position: LatLng(19.4049138, -99.1987476),
+      infoWindow: InfoWindow(title: 'Casa Merlos'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueOrange,
+      ),
+    );
+
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       child: GoogleMap(
+        myLocationEnabled: true,
         mapType: MapType.normal,
-        initialCameraPosition:
-            CameraPosition(target: LatLng(19.2903597, -99.1821242), zoom: 12),
+        initialCameraPosition: CameraPosition(target: _center, zoom: 10),
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
         },
@@ -579,6 +1394,7 @@ class HomePageState extends State<HomePage> {
 
   Future<void> _gotoLocation(double lat, double long) async {
     final GoogleMapController controller = await _controller.future;
+
     controller.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
       target: LatLng(lat, long),
       zoom: 15,
@@ -587,164 +1403,3 @@ class HomePageState extends State<HomePage> {
     )));
   }
 }
-
-Marker newyork4Marker = Marker(
-  markerId: MarkerId('newyork4'),
-  position: LatLng(19.4274206, -99.1936420),
-  infoWindow: InfoWindow(title: 'Chapulín'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork5Marker = Marker(
-  markerId: MarkerId('newyork5'),
-  position: LatLng(19.4359350, -99.1376785),
-  infoWindow: InfoWindow(title: 'Café Tacuba'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork6Marker = Marker(
-  markerId: MarkerId('newyork6'),
-  position: LatLng(19.3488345, -99.1636558),
-  infoWindow: InfoWindow(title: 'Los Danzantes'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork7Marker = Marker(
-  markerId: MarkerId('newyork7'),
-  position: LatLng(19.2948654, -99.1283186),
-  infoWindow: InfoWindow(title: 'Porfirios Coapa'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork8Marker = Marker(
-  markerId: MarkerId('newyork8'),
-  position: LatLng(19.4315513, -99.1900471),
-  infoWindow: InfoWindow(title: 'Porfirios Masaryk'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork9Marker = Marker(
-  markerId: MarkerId('newyork9'),
-  position: LatLng(19.4553448, -99.2194807),
-  infoWindow: InfoWindow(title: 'Porfirios Toreo'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork10Marker = Marker(
-  markerId: MarkerId('newyork10'),
-  position: LatLng(19.4331026, -99.1362955),
-  infoWindow: InfoWindow(title: 'Azul Historico'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork11Marker = Marker(
-  markerId: MarkerId('newyork11'),
-  position: LatLng(19.3138514, -99.1850571),
-  infoWindow: InfoWindow(title: 'Azul y Oro'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork12Marker = Marker(
-  markerId: MarkerId('newyork12'),
-  position: LatLng(19.4130653, -99.1714772),
-  infoWindow: InfoWindow(title: 'Azul Condesa'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork13Marker = Marker(
-  markerId: MarkerId('newyork13'),
-  position: LatLng(19.4350266, -99.1459657),
-  infoWindow: InfoWindow(title: 'El Cardenal Cuahutemoc 1'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork14Marker = Marker(
-  markerId: MarkerId('newyork14'),
-  position: LatLng(19.4339326, -99.1353377),
-  infoWindow: InfoWindow(title: 'El Cardenal Cuahutemoc 2'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork15Marker = Marker(
-  markerId: MarkerId('newyork15'),
-  position: LatLng(19.3951450, -99.1753602),
-  infoWindow: InfoWindow(title: 'El Cardenal Benito Juárez'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork16Marker = Marker(
-  markerId: MarkerId('newyork16'),
-  position: LatLng(19.3473490, -99.1888229),
-  infoWindow: InfoWindow(title: 'El Cardenal Álvaro Obregón'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork17Marker = Marker(
-  markerId: MarkerId('newyork17'),
-  position: LatLng(19.4310083, -99.2099231),
-  infoWindow: InfoWindow(title: 'El Cardenal Miguel Hidalgo'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork18Marker = Marker(
-  markerId: MarkerId('newyork18'),
-  position: LatLng(19.4344523, -99.2091766),
-  infoWindow: InfoWindow(title: 'La Hacienda de los Morales'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork19Marker = Marker(
-  markerId: MarkerId('newyork19'),
-  position: LatLng(19.4330510, -99.1947873),
-  infoWindow: InfoWindow(title: 'Pujol'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork20Marker = Marker(
-  markerId: MarkerId('newyork20'),
-  position: LatLng(19.4363097, -99.1379504),
-  infoWindow: InfoWindow(title: 'Limosneros'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork21Marker = Marker(
-  markerId: MarkerId('newyork21'),
-  position: LatLng(19.4652252, -99.1777254),
-  infoWindow: InfoWindow(title: 'Nicos'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork22Marker = Marker(
-  markerId: MarkerId('newyork22'),
-  position: LatLng(19.4308458, -99.1939002),
-  infoWindow: InfoWindow(title: 'Quintonil'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker newyork23Marker = Marker(
-  markerId: MarkerId('newyork23'),
-  position: LatLng(19.4049138, -99.1987476),
-  infoWindow: InfoWindow(title: 'Casa Merlos'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);

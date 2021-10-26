@@ -37,9 +37,9 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc01] C:
 MERGED from [androidx.print:print:1.0.0-rc01] C:\Users\bby_1\.gradle\caches\transforms-1\files-1.1\print-1.0.0-rc01.aar\550c431de822dca6ea62ca0529c99b0b\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0-rc01] C:\Users\bby_1\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0-rc01.aar\3cba4c5cc6a9c1d1d0e0fe888f80d6e9\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc01] C:\Users\bby_1\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0-rc01.aar\7afcc6e7f6daad6a93c6ac3067eec479\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml:1:1-9:12
+INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml:1:1-9:12
+INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml:1:1-9:12
 	package
 		ADDED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\main\AndroidManifest.xml:2:5-47
 		INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\main\AndroidManifest.xml
@@ -64,6 +64,8 @@ MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\bby_1\.g
 		ADDED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\main\AndroidManifest.xml:6:5-78
+MERGED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\main\AndroidManifest.xml:6:5-78
+MERGED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\main\AndroidManifest.xml:6:5-78
 	android:name
 		ADDED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
@@ -204,6 +206,10 @@ INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\ap
 	android:minSdkVersion
 		INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_COARSE_LOCATION”
+ADDED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from C:\Users\bby_1\OneDrive\Documentos\GitHub\MapeoFoodClic\android\app\src\debug\AndroidManifest.xml:8:22-79
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\bby_1\.gradle\caches\transforms-1\files-1.1\jetified-play-services-maps-16.1.0.aar\20da83d09db6051972d3e50414ba408c\AndroidManifest.xml:23:5-79
 	android:name
